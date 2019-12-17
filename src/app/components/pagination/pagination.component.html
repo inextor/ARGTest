@@ -1,0 +1,11 @@
+<div class="d-flex bd-hightlight border border-primary">
+	<div>
+		<button [disabled]="currentPage == 0" type="button" class="btn btn-primary"  (click)="gotoPage(0)">&lt;&lt;</button>
+		<button [disabled]="currentPage == 0" type="button" class="btn btn-primary"  (click)="gotoPage(currentPage-1)">&lt;</button>
+	</div>
+	<div class="flex-grow-1 text-center indicador">página {{currentPage+1}} de {{totalPages}}</div>
+	<div>
+		<button [disabled]="currentPage >= totalPages-1 "type="button" class="btn btn-primary" (click)="gotoPage(currentPage+1)">&gt;</button>
+		<button [disabled]="currentPage >= totalPages-1 "type="button" class="btn btn-primary" (click)="gotoPage(totalPages-1)">&gt;&gt;</button>
+	</div>
+</div>
