@@ -15,7 +15,7 @@ import { PaginationComponent } from './components/pagination/pagination.componen
   declarations: [
     AppComponent,
     BaseComponent,
-    LoadingComponent
+    LoadingComponent,
     NavigationMenuComponent,
     HeaderComponent,
     PaginationComponent
