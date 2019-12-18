@@ -48,7 +48,7 @@ export class PaginationComponent implements OnInit {
 		else
 		{
 			console.log('navigate');
-			let params = { pagina: page }
+			let params = { page : page }
 			this.router.navigate([this.path],{queryParams: params,  queryParamsHandling:"merge"});
 		}
 		//[routerLink]="[path]" [queryParams]="{pagina:totalPages-1}" queryParamsHandling="merge"
